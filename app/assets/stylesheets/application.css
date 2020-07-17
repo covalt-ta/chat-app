@@ -17,6 +17,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   display: flex;
 }
@@ -29,14 +33,39 @@
 }
 
 .side-bar-header {
-  height: 100px;
   padding: 0 20px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .rooms {
   background-color: #2F3E51;
   height: calc(100vh - 100px);
   padding: 0 20px;
+}
+
+.header-name a {
+  color: #FAFAFA;
+  font-size: 16px;
+}
+
+.create-room a {
+  color: deepskyblue;
+  font-size: 10px;
+  border: 1px solid lightblue;
+  padding: 14px;
+}
+
+/* サイドバー　ボディ部分 */
+
+.room-name {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  color: white;
 }
 
 /* メインチャット画面 */
