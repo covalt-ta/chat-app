@@ -5,5 +5,6 @@ class RoomsController < ApplicationController
   end
   
   def create
+    
   end
 end
