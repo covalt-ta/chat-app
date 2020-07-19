@@ -7,10 +7,12 @@
     </div>
 </div>
 <div class="rooms">
-  <% @rooms.each do |room| %>
-    <div class="room-name">
-      <%= link_to room.name, messages_path %>
-    </div>
+  <% if current_user.rooms %>
+    <% current_user.rooms.each do |room| %>
+      <div class="room-name">
+        <%= link_to room.name, room_messages_path(room) %>
+      </div>
+    <% end %>
   <% end %>
 </div>
 
